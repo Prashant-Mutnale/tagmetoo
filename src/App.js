@@ -4,6 +4,7 @@ import { signUpAction } from "../src/actions/signUpActions";
 import logo from "./logo.svg";
 import { connect } from "react-redux";
 import Homepage from "./components/Homepage";
+import Profile from "../src/components/Profile";
 import RepairPhone from "../src/components/Repairphone";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 class App extends Component {
@@ -12,7 +13,7 @@ class App extends Component {
       <div className="App">
         <Switch>
           <Route path="/" component={Homepage} exact />
-          <Route path="/repairphone" component={RepairPhone} />
+          <Route path="/Profile" component={Profile} />
           {/* <Route component={error} /> */}
         </Switch>
       </div>

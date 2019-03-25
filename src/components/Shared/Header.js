@@ -111,7 +111,6 @@ export default class Header extends Component {
   render() {
     return (
       <div className="header">
-        {/* <a onClick={() => this.changeRoute("/repairphone")}>Homepage</a>; */}
         {this.state.overLayActive ? (
           <div className="overlay" onClick={() => this.closePopup()} />
         ) : null}

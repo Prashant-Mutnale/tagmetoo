@@ -3,6 +3,9 @@ import Header from "../Shared/Header";
 import Banner from "../../assets/images/banner.jpg";
 import Card from "../../assets/images/cardimage.jpg";
 export default class HomeModule extends Component {
+  changeRoute(getdata) {
+    this.props.getProps.history.push(getdata);
+  }
   eventCategoty = () => {
     return (
       <div className="eventCategoryHolder">
@@ -56,6 +59,7 @@ export default class HomeModule extends Component {
           <img src={Banner} alt="" />
         </div>
         {this.eventCategoty()}
+        <a onClick={() => this.changeRoute("/Profile")}>Route</a>;
       </React.Fragment>
     );
   }
