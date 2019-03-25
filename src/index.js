@@ -1,16 +1,13 @@
 import http from "http";
-import https from "https";
 
 let app = require("./server").default;
-const server = https.createServer(app);
+const server = http.createServer(app);
 
 server.listen(process.env.PORT, error => {
   if (error) {
     console.log(error);
   }
-  console.log(
-    `React SSR App is running: https://localhost:${process.env.PORT}`
-  );
+  console.log(`React SSR App is running: http://localhost:${process.env.PORT}`);
 });
 
 let currentApp = app;
