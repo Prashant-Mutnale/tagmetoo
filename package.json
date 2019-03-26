@@ -22,7 +22,8 @@
     "start": "react-ssr-scripts start",
     "build": "react-ssr-scripts build",
     "test": "react-ssr-scripts test",
-    "eject": "react-ssr-scripts eject"
+    "eject": "react-ssr-scripts eject",
+    "heroku-postbuild": "yarn build"
   },
   "eslintConfig": {
     "extends": "react-app"
