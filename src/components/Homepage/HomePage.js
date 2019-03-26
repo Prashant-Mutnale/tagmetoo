@@ -59,7 +59,7 @@ export default class HomeModule extends Component {
           <img src={Banner} alt="" />
         </div>
         {this.eventCategoty()}
-        <a onClick={() => this.changeRoute("/Profile")}>Route</a>;
+        {/* <a onClick={() => this.changeRoute("/Profile")}>Route</a>; */}
       </React.Fragment>
     );
   }
