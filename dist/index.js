@@ -23,7 +23,7 @@ module.exports =
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "cfc22d0c680bd653abab";
+/******/ 	var hotCurrentHash = "c8f4ba6ef352f42a67d0";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -741,7 +741,7 @@ module.exports =
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "http://0.0.0.0:8081/";
+/******/ 	__webpack_require__.p = "http://0.0.0.0:8080/";
 /******/
 /******/ 	// __webpack_hash__
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
@@ -1066,7 +1066,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! http */ \"http\");\n/* harmony import */ var http__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(http__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar app = __webpack_require__(/*! ./server */ \"./src/server/index.js\").default;\n\nvar server = http__WEBPACK_IMPORTED_MODULE_0___default.a.createServer(app);\nserver.listen(\"8001\", function (error) {\n  if (error) {\n    console.log(error);\n  }\n\n  console.log(\"React SSR App is running: http://localhost:\".concat(\"8001\"));\n});\nvar currentApp = app;\n\nif (true) {\n  module.hot.accept(/*! ./server */ \"./src/server/index.js\", function(__WEBPACK_OUTDATED_DEPENDENCIES__) { (function () {\n    console.log(\"Server reloading...\");\n\n    try {\n      app = __webpack_require__(/*! ./server */ \"./src/server/index.js\").default;\n      server.removeListener(\"request\", currentApp);\n      server.on(\"request\", app);\n      currentApp = app;\n    } catch (error) {// Do nothing\n    }\n  })(__WEBPACK_OUTDATED_DEPENDENCIES__); });\n}\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! http */ \"http\");\n/* harmony import */ var http__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(http__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar app = __webpack_require__(/*! ./server */ \"./src/server/index.js\").default;\n\nvar server = http__WEBPACK_IMPORTED_MODULE_0___default.a.createServer(app);\nserver.listen(\"8000\", function (error) {\n  if (error) {\n    console.log(error);\n  }\n\n  console.log(\"React SSR App is running: http://localhost:\".concat(\"8000\"));\n});\nvar currentApp = app;\n\nif (true) {\n  module.hot.accept(/*! ./server */ \"./src/server/index.js\", function(__WEBPACK_OUTDATED_DEPENDENCIES__) { (function () {\n    console.log(\"Server reloading...\");\n\n    try {\n      app = __webpack_require__(/*! ./server */ \"./src/server/index.js\").default;\n      server.removeListener(\"request\", currentApp);\n      server.on(\"request\", app);\n      currentApp = app;\n    } catch (error) {// Do nothing\n    }\n  })(__WEBPACK_OUTDATED_DEPENDENCIES__); });\n}\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
